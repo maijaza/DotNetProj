@@ -1,0 +1,10 @@
+[Oo]bj/
+[Dd]ebug/
+[Bb]in/
+db.lock
+.nuget/
+packages/
+
+# Visual Studio 2015/2017 cache/options directory
+*.vs/
+README.md
