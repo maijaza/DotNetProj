@@ -7,31 +7,31 @@ using System.Web.Http;
 
 namespace Api.Controllers
 {
-    public class UserController : ApiController
+    public class CustomerController : ApiController
     {
-        // GET: api/User
+        // GET: api/Customer
         public IEnumerable<string> Get()
         {
             return new string[] { "value1", "value2" };
         }
 
-        // GET: api/User/5
+        // GET: api/Customer/5
         public string Get(int id)
         {
             return "value";
         }
 
-        // POST: api/User
+        // POST: api/Customer
         public void Post([FromBody]string value)
         {
         }
 
-        // PUT: api/User/5
+        // PUT: api/Customer/5
         public void Put(int id, [FromBody]string value)
         {
         }
 
-        // DELETE: api/User/5
+        // DELETE: api/Customer/5
         public void Delete(int id)
         {
         }
