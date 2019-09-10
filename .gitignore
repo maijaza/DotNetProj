@@ -4,6 +4,7 @@
 db.lock
 .nuget/
 packages/
+App_Data/
 
 # Visual Studio 2015/2017 cache/options directory
 *.vs/
