@@ -3,9 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace Api.Repositories
+namespace Api.Repositories.BaseRepo
 {
-    public interface IRepository
+    // example for general repository  
+    public interface IRepositoryGeneral<T> where T :class
     {
         void Get();
         void Find();
