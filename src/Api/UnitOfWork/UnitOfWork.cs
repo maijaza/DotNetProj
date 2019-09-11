@@ -18,17 +18,30 @@ namespace Api.UnitOfWork
         {
             db = new CustomerContext();
         }
+ 
 
-        public IRepository GetRepository(RepositoryType repo)
+
+        public GenericRepository<Customer> CustomerGenericRepository
         {
-            if (repo == RepositoryType.Customer)
-                return new CustomerRepository();
-            return null;
+            get
+            {
+                return new GenericRepository<Customer>(db);
+            }
         }
 
-          
+   
+        public virtual CustomerRepository CustomerRepo
+        {
+            get
+            {
+                return new CustomerRepository(db);
+            }
+        }
 
-         
-        
+    
+
+
+
+
     }
 }

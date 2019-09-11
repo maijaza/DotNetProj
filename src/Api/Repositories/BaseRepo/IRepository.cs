@@ -5,9 +5,14 @@ using System.Web;
 
 namespace Api.Repositories
 {
-    public interface IRepository
+    public interface IRepository<T> where T : class
     {
-        void Get();
-        void Find();
+        IEnumerable<T> List { get; }
+        void Add(T entity);
+        void Delete(T entity);
+        void Update(T entity);
+        T FindById(int Id);
+
+        List<T> FindAll();
     }
 }
