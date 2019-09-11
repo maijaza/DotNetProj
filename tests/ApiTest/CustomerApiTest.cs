@@ -10,7 +10,7 @@ using System.Linq;
 namespace ApiTest
 {
     [TestClass]
-    public class UnitTest1
+    public class CustomerApiTest
     {
         CustomerController customerController;
         Mock<UnitOfWork> mockUOW;
